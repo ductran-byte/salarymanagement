@@ -1,0 +1,16 @@
+-- -- ===========================================
+-- -- 🌱 INITIAL EMPLOYEE DATA
+-- -- ===========================================
+--
+-- INSERT INTO employees (name, email, department, position, basic_salary, allowance, total_salary)
+-- VALUES
+--     ('Nguyen Van A', 'a.nguyen@company.com', 'IT', 'Developer', 1000, 200, 1200),
+--     ('Tran Thi B', 'b.tran@company.com', 'HR', 'HR Manager', 1500, 300, 1800),
+--     ('Le Van C', 'c.le@company.com', 'Finance', 'Accountant', 1200, 150, 1350),
+--     ('Pham Thi D', 'd.pham@company.com', 'Sales', 'Sales Executive', 1100, 250, 1350),
+--     ('Hoang Van E', 'e.hoang@company.com', 'Marketing', 'Content Creator', 1000, 100, 1100),
+--     ('Do Thi F', 'f.do@company.com', 'IT', 'QA Engineer', 950, 180, 1130),
+--     ('Bui Van G', 'g.bui@company.com', 'Operations', 'Supervisor', 1400, 220, 1620),
+--     ('Nguyen Thi H', 'h.nguyen@company.com', 'HR', 'Recruiter', 900, 150, 1050),
+--     ('Vu Van I', 'i.vu@company.com', 'Finance', 'Auditor', 1300, 200, 1500),
+--     ('Tran Thi J', 'j.tran@company.com', 'Sales', 'Sales Assistant', 850, 120, 970);
