@@ -1,0 +1,103 @@
+{
+  "info": {
+    "name": "Salary Management System",
+    "_postman_id": "b8ef0e7e-23d4-4d87-a128-ff6507a9a33e",
+    "description": "Postman collection for testing CRUD + Search API of Salary Management System built with Spring Boot",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Employees",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employees",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "employees"]
+        }
+      }
+    },
+    {
+      "name": "Search Employees by Keyword",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employees?keyword=nguyen",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "employees"],
+          "query": [{ "key": "keyword", "value": "nguyen" }]
+        }
+      }
+    },
+    {
+      "name": "Get Employee by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employees/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "employees", "1"]
+        }
+      }
+    },
+    {
+      "name": "Add New Employee",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Pham Thi Hoa\",\n  \"email\": \"hoa.pham@company.com\",\n  \"department\": \"Marketing\",\n  \"position\": \"Content Creator\",\n  \"basicSalary\": 900,\n  \"allowance\": 150\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employees",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "employees"]
+        }
+      }
+    },
+    {
+      "name": "Update Employee by ID",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Pham Thi Hoa Updated\",\n  \"email\": \"hoa.pham@company.com\",\n  \"department\": \"Marketing\",\n  \"position\": \"Senior Content Creator\",\n  \"basicSalary\": 1000,\n  \"allowance\": 200\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employees/11",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "employees", "11"]
+        }
+      }
+    },
+    {
+      "name": "Delete Employee by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employees/11",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "employees", "11"]
+        }
+      }
+    }
+  ]
+}
